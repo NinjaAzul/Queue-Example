@@ -33,6 +33,10 @@ export class Queue<T> {
   get length() {
     return this.tail - this.head;
   }
+  
+   get isEmpty() {
+    return this.length === 0;
+  }
 }
 
 ```
